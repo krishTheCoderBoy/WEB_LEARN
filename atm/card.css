@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(4, 1, 32);
+    /* padding: auto; */
+}
+.container::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgb(224, 203, 6),rgb(204, 39, 10));
+    clip-path: circle(25% at right 65%);
+}
+.container::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgb(13, 209, 29),rgb(7, 43, 122));
+    clip-path: circle(20% at left 45%);
+}
+.container1{
+    position: relative;
+    top: 220px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* max-width: 1200px; */
+    flex-wrap: wrap;
+    padding: px;
+    z-index: 1;
+    /* background-color: aqua; */
+    /* display: flex; */
+}
+.card{
+    display: flex;
+    position: relative;
+    height: 210px ;
+    width: 360px;
+    background: rgba(255,255,255, 0.1);
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius:15px ;
+    border-top:1px solid rgba(255,255,255, 0.5) ;
+    border-left: 1px solid rgba(255,255,255, 0.5);
+    backdrop-filter: blur(5px);
+    margin: 35px;
+    /* margin-left: 500px; */
+    box-shadow:20px 20px 50px rgba(0, 0, 0, 0.5) ;
+}
+.bank{
+    color: rgb(227, 235, 235);
+    position: relative;
+    left: 120px;
+    bottom: 75px;
+    font-size: 25px;
+    color: rgba(48, 13, 175, 0.7);
+}
+.logo1{
+    position: absolute;
+    left: 25px;
+    top: 75px;
+    /* background-color: rgba(255,255,255, 25); */
+    
+}
+.number{
+    position: absolute;
+    bottom: 60px;
+    right: 138px;
+    color: rgba(255, 255, 255, 0.432);
+    font-weight: 200;
+    font-size: 16px;
+    letter-spacing: 2px;
+
+}
+.logo2{
+    position: absolute;
+    height: 35px;
+    bottom: 155px;
+    right: 80px;
+    margin: 5px;
+}
+.logo3{
+    position: absolute;
+    height: 55px;
+    right:15px ;
+    top: 55px;
+}
+.name{
+    position: absolute;
+    bottom: 25px;
+    left: 65px;
+}
+.card_type{
+    position: absolute;
+    right: 15px;
+    bottom: 20px;
+    font-style: italic;
+    font-size: 21px;
+    font-weight: bolder;
+    color:rgba(48, 13, 175, 0.4);
+}
+.black{
+    position: absolute;
+    background-color:rgba(0, 0, 0, 0.5);
+    height: 50px;
+    width: 100%;
+    top: 15px;
+    left:1px ;
+}
+.bank2{
+    position: absolute;
+    top: 70px;
+    left: 290px;
+    color:rgba(48, 13, 175, 0.7);    
+}
+.logo4{
+    position: absolute;
+    right: 65px;
+    height: 25px;
+    top: 70px;
+}
+.sbi{
+    position: absolute;
+    bottom: 2px;
+    right: 25px;
+    font-style: italic;
+}
+.dash{
+    position: absolute;
+    height: 25px;
+    width: 40%;
+    background-color: antiquewhite;
+    top: 95px;
+    left: 8px;
+}
+.cvv{
+    position: absolute;
+    top: 95px;
+    left: 35%;
+    font-style: italic;
+}
+.dash2{
+    position: absolute;
+    height: 35px;
+    top: 90px;
+    left: 8px;
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.432);
+}
+.last{
+    position: absolute;
+    right: 5px;
+    bottom: 4px;
+    color: black;
+    font-size: 22px;
+    font-weight: 900;
+    font-style: italic;
+}
